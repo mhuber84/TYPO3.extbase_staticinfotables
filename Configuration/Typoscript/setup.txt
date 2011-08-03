@@ -1,0 +1,34 @@
+plugin.tx_extbasedam {
+	persistence {
+		storagePid = 0
+		classes {
+			Tx_ExtbaseStaticinfotables_Domain_Model_Country {
+				newRecordStoragePid = 0
+				mapping {
+					tableName = static_countries
+					columns {
+						iso2.mapOnProperty = cn_iso_2
+						iso3.mapOnProperty = cn_iso_3
+						isoNr.mapOnProperty = cn_iso_nr
+						parentTrIsoNr.mapOnProperty = cn_parent_tr_iso_nr
+						officialNameLocal.mapOnProperty = cn_official_name_local
+						officialNameEn.mapOnProperty = cn_official_name_en
+						capital.mapOnProperty = cn_capital
+						toplevelDomain.mapOnProperty = cn_tldomain
+						currencyIso3.mapOnProperty = cn_currency_iso_3
+						currencyIsoNr.mapOnProperty = cn_currency_iso_nr
+						phone.mapOnProperty = cn_phone
+						euMember.mapOnProperty = cn_eu_member
+						addressFormat.mapOnProperty = cn_address_format
+						zoneFlag.mapOnProperty = cn_zone_flag
+						shortLocal.mapOnProperty = cn_short_local
+						shortEn.mapOnProperty = cn_short_en
+						unoMember.mapOnProperty = cn_uno_member
+					}
+				}
+			}
+		}
+	}
+}
+
+config.tx_extbase.persistence.classes.Tx_ExtbaseStaticinfotables_Domain_Model_Countries < plugin.tx_extbasedam.persistence.classes.Tx_ExtbaseStaticinfotables_Domain_Model_Countries
