@@ -1,4 +1,4 @@
-plugin.tx_extbasedam {
+plugin.tx_extbasestaticinfotables {
 	persistence {
 		storagePid = 0
 		classes {
@@ -7,23 +7,23 @@ plugin.tx_extbasedam {
 				mapping {
 					tableName = static_countries
 					columns {
-						iso2.mapOnProperty = cn_iso_2
-						iso3.mapOnProperty = cn_iso_3
-						isoNr.mapOnProperty = cn_iso_nr
-						parentTrIsoNr.mapOnProperty = cn_parent_tr_iso_nr
-						officialNameLocal.mapOnProperty = cn_official_name_local
-						officialNameEn.mapOnProperty = cn_official_name_en
-						capital.mapOnProperty = cn_capital
-						toplevelDomain.mapOnProperty = cn_tldomain
-						currencyIso3.mapOnProperty = cn_currency_iso_3
-						currencyIsoNr.mapOnProperty = cn_currency_iso_nr
-						phone.mapOnProperty = cn_phone
-						euMember.mapOnProperty = cn_eu_member
-						addressFormat.mapOnProperty = cn_address_format
-						zoneFlag.mapOnProperty = cn_zone_flag
-						shortLocal.mapOnProperty = cn_short_local
-						shortEn.mapOnProperty = cn_short_en
-						unoMember.mapOnProperty = cn_uno_member
+						cn_iso_2.mapOnProperty = iso2
+						cn_iso_3.mapOnProperty = iso3
+						cn_iso_nr.mapOnProperty = isoNr
+						cn_parent_tr_iso_nr.mapOnProperty = parentTrIsoNr
+						cn_official_name_local.mapOnProperty = officialNameLocal
+						cn_official_name_en.mapOnProperty = officialNameEn
+						cn_capital.mapOnProperty = capital
+						cn_tldomain.mapOnProperty = toplevelDomain
+						cn_currency_iso_3.mapOnProperty = currencyIso3
+						cn_currency_iso_nr.mapOnProperty = currencyIsoNr
+						cn_phone.mapOnProperty = phone
+						cn_eu_member.mapOnProperty = euMember
+						cn_address_format.mapOnProperty = addressFormat
+						cn_zone_flag.mapOnProperty = zoneFlag
+						cn_short_local.mapOnProperty = shortLocal
+						cn_short_en.mapOnProperty = shortEn
+						cn_uno_member.mapOnProperty = unoMember
 					}
 				}
 			}
@@ -31,4 +31,4 @@ plugin.tx_extbasedam {
 	}
 }
 
-config.tx_extbase.persistence.classes.Tx_ExtbaseStaticinfotables_Domain_Model_Countries < plugin.tx_extbasedam.persistence.classes.Tx_ExtbaseStaticinfotables_Domain_Model_Countries
+config.tx_extbase.persistence.classes.Tx_ExtbaseStaticinfotables_Domain_Model_Countries < plugin.tx_extbasestaticinfotables.persistence.classes.Tx_ExtbaseStaticinfotables_Domain_Model_Countries
